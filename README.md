@@ -1,2 +1,2 @@
 # new-project
-educational project
+educational project 1
