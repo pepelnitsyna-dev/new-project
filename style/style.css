@@ -1,0 +1,9 @@
+h1 {
+    color: red;
+}
+
+.hero__title {
+    color: #1F1E1E;
+    font-size: 45px;
+    font-weight: 400;
+}
