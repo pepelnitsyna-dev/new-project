@@ -6,37 +6,41 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body class="body">
-        <header class="page-header">
-            <a href="#" class="page-header__logo"></a>
-            <nav class="page-header__nav">
-                <a href="#" class="page-header__nav-link">Мероприятия</a>
-                <a href="#" class="page-header__nav-link">Блог</a>
-                <a href="#" class="page-header__nav-link">О нас</a>
-                <a href="#" class="page-header__nav-link">Контакты</a>  
+        <header class="header">
+            <a href="#" class="logo header__logo"></a>
+            <nav class="nav header__nav">
+                <a class="nav__link">Мероприятия</a>
+                <a class="nav__link">Блог</a>
+                <a class="nav__link">О нас</a>
+                <a class="nav__link">Контакты</a>  
             </nav>
+            <button class="button button--outline header__login">Войти</button>
         </header>
         <main class="main">
             <div class="home">
                 <section class="hero home__hero">
-                    <h1 class="hero__title">АРТ-ПРОСТРАНСТВО</h2>
-                    <p class="hero__description">
-                        для людей, горящих сердцем и делом место для настоящего
-                    </p>
+                    <h1 class="hero__title">АРТ-ПРОСТРАНСТВО</h1>
+                    <p class="hero__description">Для людей, горящих сердцем и делом место для настоящего</p>
+                    <p class="hero__label">Я хочу:</p>
+                    <div class="hero__actions">
+                        <button class="button button--primary">Провести мероприятие</button>
+                        <button class="button button--outline">Стать арендатором</button>
+                    </div>
                 </section>
                 <section class="about home__about">
-                    <h2 class="about__section-title section-title">О нас</h2>
+                    <h2 class="section-title about__section-title">О нас</h2>
                 </section>
                 <section class="events home__events">
-                    <h2 class="events__title section-title">Мероприятия</h2>
+                    <h2 class="section-title events__section-title">Мероприятия</h2>
                 </section>
                 <section class="blog home__blog">
-                    <h2 class="blog__title section-title">Блог</h2>
+                    <h2 class="section-tittle blog__section-title">Блог</h2>
                 </section>
                 <section class="contacts home__contacts">
-                    <h2 class="contacts__title section-title">Контакты</h2>
+                    <h2 class="section-title contacts__section-title">Контакты</h2>
                 </section>
             </div>
         </main>
-        <footer class="page-footer"></footer>
+        <footer class="footer"></footer>
     </body>
 </html>
