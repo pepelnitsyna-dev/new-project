@@ -7,3 +7,43 @@ h1 {
     font-size: 45px;
     font-weight: 400;
 }
+
+.header__container {
+    max-width: 1334px;
+}
+
+.about {
+    padding: 200px 0 100px 0;
+}
+
+.about__container {
+    max-width: 1334px;
+    margin: 0 auto;
+}
+
+.events {
+   padding: 110px 0 94px 0;
+}
+
+.events__container {
+    max-width: 1334px;
+    margin: 0 auto;
+}
+
+.blog {
+    padding: 54px 0 78px 0;
+}
+
+.blog__container {
+    max-width: 1334px;
+    margin: 0 auto;
+}
+
+.contacts {
+    padding: 0 0 153px 0;
+}
+
+.contacts__container {
+    max-width: 1334px;
+    margin: 0 auto;
+}

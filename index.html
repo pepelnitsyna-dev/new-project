@@ -7,14 +7,16 @@
     </head>
     <body class="body">
         <header class="header">
-            <a href="#" class="logo header__logo"></a>
-            <nav class="nav header__nav">
-                <a class="nav__link">Мероприятия</a>
-                <a class="nav__link">Блог</a>
-                <a class="nav__link">О нас</a>
-                <a class="nav__link">Контакты</a>  
-            </nav>
-            <button class="button button--outline header__login">Войти</button>
+            <div class="header__container">
+                <a href="#" class="logo header__logo"></a>
+                <nav class="nav header__nav">
+                    <a class="nav__link">Мероприятия</a>
+                    <a class="nav__link">Блог</a>
+                    <a class="nav__link">О нас</a>
+                    <a class="nav__link">Контакты</a>  
+                </nav>
+                <button class="button button--outline header__login">Войти</button>
+            </div>
         </header>
         <main class="main">
             <div class="home">
@@ -28,16 +30,24 @@
                     </div>
                 </section>
                 <section class="about home__about">
-                    <h2 class="section-title about__section-title">О нас</h2>
+                    <div class="about__container">
+                        <h2 class="section-title about__section-title">О нас</h2>
+                    </div>
                 </section>
                 <section class="events home__events">
-                    <h2 class="section-title events__section-title">Мероприятия</h2>
+                    <div class="events__container">
+                        <h2 class="section-title events__section-title">Мероприятия</h2>
+                    </div>
                 </section>
                 <section class="blog home__blog">
-                    <h2 class="section-tittle blog__section-title">Блог</h2>
+                   <div class="blog__container">
+                        <h2 class="section-tittle blog__section-title">Блог</h2>
+                    </div>
                 </section>
                 <section class="contacts home__contacts">
-                    <h2 class="section-title contacts__section-title">Контакты</h2>
+                    <div class="contacts__container">
+                        <h2 class="section-title contacts__section-title">Контакты</h2>
+                    </div>
                 </section>
             </div>
         </main>
