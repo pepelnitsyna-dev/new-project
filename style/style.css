@@ -1,15 +1,115 @@
-h1 {
-    color: red;
+html,
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #1F1E1E;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+.header__container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1334px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    flex-shrink: 0;
+    width: 202px;
+    height: 147px;
+    font-size: 0;
+    text-decoration: none;
+}
+
+.header__logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    color: #1F1E1E;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav__link:hover {
+    color: #BC3324;
+}
+
+.header__right-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 202px;
+}
+
+.button {
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    color: #1F1E1E;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center; 
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+    background-color: #1F1E1E;
+    color: #FFFFFF;
+}
+
+.main {
+    flex: 1 0 auto;
 }
 
 .hero__description {
     color: #1F1E1E;
     font-size: 45px;
     font-weight: 400;
-}
-
-.header__container {
-    max-width: 1334px;
 }
 
 .about {
@@ -46,4 +146,8 @@ h1 {
 .contacts__container {
     max-width: 1334px;
     margin: 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
 }

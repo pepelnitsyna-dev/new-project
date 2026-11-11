@@ -3,26 +3,33 @@
     <head>
         <meta charset="UTF-8" />
         <title>Lenni</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body class="body">
         <header class="header">
             <div class="header__container">
-                <a href="#" class="logo header__logo"></a>
+                <a href="/" class="logo header__logo">
+                    <img class="header__logo-img" src="img/logo.svg" alt="logo" />
+                </a>
                 <nav class="nav header__nav">
-                    <a class="nav__link">Мероприятия</a>
-                    <a class="nav__link">Блог</a>
-                    <a class="nav__link">О нас</a>
-                    <a class="nav__link">Контакты</a>  
+                    <a class="nav__link" href="#">Мероприятия</a>
+                    <a class="nav__link" href="#">Блог</a>
+                    <a class="nav__link" href="#">О нас</a>
+                    <a class="nav__link" href="#">Контакты</a>  
                 </nav>
-                <button class="button button--outline header__login">Войти</button>
+                <div class="header__right-block">
+                    <a href="#" class="button button--outline header__login">Войти</a>
+                </div>
             </div>
         </header>
         <main class="main">
             <div class="home">
                 <section class="hero home__hero">
-                    <h1 class="hero__title">АРТ-ПРОСТРАНСТВО</h1>
-                    <p class="hero__description">Для людей, горящих сердцем и делом место для настоящего</p>
+                    <h2 class="hero__title">АРТ-ПРОСТРАНСТВО</h2>
+                    <h2 class="hero__description">Для людей, горящих сердцем и делом место для настоящего</h2>
                     <p class="hero__label">Я хочу:</p>
                     <div class="hero__actions">
                         <button class="button button--primary">Провести мероприятие</button>
