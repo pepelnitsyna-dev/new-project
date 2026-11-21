@@ -1,0 +1,25 @@
+.resrve {
+    display: grid;
+    grid-gap: 60px 11%;
+    grid-template-columns: 405px calc(89%-405px);
+    grid-template-areas: 
+        "checks scheme" 
+        "order legend";
+    width: 100%;
+
+    &__checkbox {
+        grid-area: checks;
+    }
+
+    &__order {
+        grid-area: order;
+    }   
+
+    &__scheme {
+        grid-area: scheme;
+    }
+
+    &__legend {
+        grid-area: legend;
+    }
+}
