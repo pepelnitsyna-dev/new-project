@@ -5,37 +5,11 @@
     @@include('blocks/header.html')
     <main class="main">
       <div class="home">
-        <section class="hero home__hero">
-          <h2 class="hero__title">АРТ-ПРОСТРАНСТВО</h2>
-          <h2 class="hero__description">
-            Для людей, горящих сердцем и делом место для настоящего
-          </h2>
-          <p class="hero__label">Я хочу:</p>
-          <div class="hero__actions">
-            <button class="button button--primary">Провести мероприятие</button>
-            <button class="button button--outline">Стать арендатором</button>
-          </div>
-        </section>
-        <section class="about home__about">
-          <div class="about__container">
-            <h2 class="section-title about__section-title">О нас</h2>
-          </div>
-        </section>
-        <section class="events home__events">
-          <div class="events__container">
-            <h2 class="section-title events__section-title">Мероприятия</h2>
-          </div>
-        </section>
-        <section class="blog home__blog">
-          <div class="blog__container">
-            <h2 class="section-title blog__section-title">Блог</h2>
-          </div>
-        </section>
-        <section class="contacts home__contacts">
-          <div class="contacts__container">
-            <h2 class="section-title contacts__section-title">Контакты</h2>
-          </div>
-        </section>
+        @@include('sections/hero.html', {"class": "home__hero"})
+        @@include('sections/about.html', {"class": "home__about"})
+        @@include('sections/events.html', {"class": "home__events"})
+        @@include('sections/blog.html', {"class": "home__blog"})
+        @@include('sections/contacts.html', {"class": "home__contacts"})
       </div>
     </main>
     @@include('blocks/footer.html')
