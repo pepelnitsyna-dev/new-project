@@ -2,7 +2,7 @@ import gulp from "gulp";
 import { deleteSync } from "del";
 
 import include from "gulp-file-include";
-import formatHTML from "gulp-format-html";
+import formatHtml from "gulp-format-html";
 
 import less from "gulp-less";
 import plumber from "gulp-plumber";
@@ -54,10 +54,10 @@ function includeHtml() {
     .pipe(
       include({
         prefix: "@@",
-        basepath: "src/html",
+        basepath: "@file",
       }),
     )
-    .pipe(formatHTML())
+    .pipe(formatHtml())
     .pipe(gulp.dest("dist"));
 }
 
