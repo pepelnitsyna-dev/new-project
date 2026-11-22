@@ -29,7 +29,7 @@ const resources = {
   jsDev: "src/scripts/dev/**/*.js",
   jsVendor: "src/scripts/vendor/**/*.js",
   images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}",
-  less: "src/style/**/*/.less",
+  less: "src/styles/**/*/.less",
   svgSprite: "src/assets/svg-sprite/*.svg",
   static: [
     "src/assets/favicons/**/*.*",
@@ -101,7 +101,7 @@ function js() {
     .pipe(terser())
     .pipe(
       rename(function (path) {
-        path.basenam += ".min";
+        path.basename += ".min";
       }),
     )
     .pipe(gulp.dest("dist/scripts"));
