@@ -245,7 +245,7 @@ img {
   max-width: 1334px;
 }
 .listing__section-title {
-  margin: 0 150px auto;
+  margin: 0 auto 150px;
 }
 .listing__events-list {
   display: -webkit-box;
